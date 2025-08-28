@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - User Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="forgotpwd.html">Forgot Password</a></li>
+                <li><a href="creditcards.html">Credit Cards</a></li>
+                <li><a href="addresses.html">Addresses</a></li>
+                <li><a href="deleteuser.html">Delete Account</a></li>
+            </ul>
+        </nav>
+
+        <h1>Delete Your Account</h1>
+        
+        <div class="card" style="border-color: #dc3545; background-color: #fff5f5;">
+            <h2 style="color: #dc3545; text-align: center;">⚠️ Warning</h2>
+            
+            <p style="text-align: center; margin-bottom: 25px; font-size: 18px;">
+                You are about to permanently delete your account. This action cannot be undone.
+            </p>
+            
+            <div style="background: white; padding: 20px; border-radius: 5px; margin-bottom: 25px;">
+                <h3>What will be deleted:</h3>
+                <ul style="color: #FF8C00; margin-left: 20px; line-height: 2;">
+                    <li>Your personal profile and account information</li>
+                    <li>All saved credit cards and payment methods</li>
+                    <li>All shipping addresses</li>
+                    <li>Order history and preferences</li>
+                    <li>Account settings and customizations</li>
+                </ul>
+            </div>
+            
+            <p style="text-align: center; margin-bottom: 25px;">
+                <strong>Are you sure you want to proceed?</strong>
+            </p>
+            
+            <form>
+                <div class="form-group">
+                    <label for="confirmation">Type "DELETE" to confirm:</label>
+                    <input type="text" id="confirmation" name="confirmation" placeholder="Type DELETE here" required>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="btn-danger" style="margin-right: 15px;">Delete My Account</button>
+                    <a href="login.html" class="btn">Cancel</a>
+                </div>
+            </form>
+        </div>
+        
+        <div class="text-center" style="margin-top: 30px;">
+            <p>Need help? <a href="mailto:support@example.com">Contact Support</a></p>
+            <p>Changed your mind? <a href="login.html">Go back to your account</a></p>
+        </div>
+    </div>
+</body>
+</html>
